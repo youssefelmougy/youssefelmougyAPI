@@ -169,11 +169,87 @@
   </header>
 
   <article>
-    <p>Every project has a beautiful feature showcase page.
-It’s easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.</p>
+    <p>TOWER is an Android Application designed to facilitate the trade of textbooks between Hofstra University students.</p>
+    
+    <h2>Initial Requirements of project</h2>
+    
+    <ol>
+      <li>Students should enable students to sell their unwanted textbooks to other students. Students will browse the avaialable textbooks on their mobile (Android or iOS based) and must have access to the following capabilities.</li>
+      <li>Registration for the system by providing their name, Hofstra ID, e-mail Address, and a password. Ability to log-in to the system by enterign their Hofstra ID and password.
+</li>
+      <li>Search for textbooks by title, ISBN number, or author, and scroll through the results of their search. The results of any search should include the price and condition of the book. Note that more than one of the same textbook may be returned by the search due to multiple students listing the same book. In this case the user should be presented with a list of results showing the different prices and conditions
+.</li>
+      <li>Purchase textbooks by sending an email to the textbook buyer and owner indicating an intent to purchase. Note that you are not required to implement a payment execution system. Instead, you are looking to match potential buyers with sellers.
+</li>
+      <li>Each user will also be able to sell textbooks. The user will need to enter the title and ISBN number, price and condition of the book.
+</li>
+      <li>Remove user’s posted textbooks from the system once the student has completed a sale or if the user decides to not sell the textbook.
+</li>
+      <li>Display additional information about textbook search results, provided directly from Amazon, including an image of the textbook cover, price, authors, and the book description.
+</li>
+    </ol>
+    
+    <h2>Changed Requirements</h2>
+    
+    <ol>
+      <li>It is a Android Based for now.</li>
+      <li>No change.</li>
+      <li>No change.</li>
+      <li>Puts the buyer into direct contact with the seller through email.</li>
+      <li>Books are automatically matched through the Google APi to make adding books easier. If non-existent in API, Sellers will need to manually add a book with Title, Author, ISBN-13, Description, Price and Condition.
+</li>
+      <li>No change.</li>
+      <li>Instead Amazon API, we had to change the requirements to fit a Google API due to project members not having a amazon affliate business account.
+</li>
+    </ol>
+
+    
+    <h2>Extra Features Added</h2>
+    
+    <ol>
+      <li>A browse function to see the latest books added to the system.</li>
+      <li>A settings option to change email address and password.</li>
+      <li>A forgot password option.</li>
+      <li>Added Privacy and EULA Agreements.</li>
+      <li>Added a password stength dectector.</li>
+      <li>Made it so you cant type letters in a numbers only are vice versa.
+</li>
+    </ol>
+    
+    <h2>How is TOWER made?</h2>
+    <p>It is based out of the Android Studio IDE, with the language Java being used, with Firebase implementation as a database to store various students and books as well as implementation of the Google Books API.</p>
+
+    <h2>Download?</h2>
+    <p>TOWER is currently not available to download from the Google Play Store as of right now. To run it you need the Android Studio application and a emulator.</p>
+
+    <h2>Application Snapshots</h2>
+    
+    <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://github.com/Tower-CSC-190/TOWER/blob/master/screenshots/Home.png" alt="" title="Home" />
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="ttps://github.com/Tower-CSC-190/TOWER/blob/master/screenshots/Search%20after%20input.png" alt="" title="Search" />
+    </div>
+ 
+    <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://github.com/Tower-CSC-190/TOWER/blob/master/screenshots/SpecificTextbook.png" alt="" title="Textbook" />
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://github.com/Tower-CSC-190/TOWER/blob/master/screenshots/Login.png" alt="" title="Login" />
+    </div>
+   
+    <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://github.com/Tower-CSC-190/TOWER/blob/master/screenshots/Sign-up.png" alt="" title="Signup" />
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://github.com/Tower-CSC-190/TOWER/blob/master/screenshots/Settings.png" alt="" title="Settings" />
+    </div>
 
 
+    
   </article>
 
 </div>
