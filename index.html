@@ -219,7 +219,7 @@
 
           <!-- Selected papers -->
           <div class="publications">
-            <h2>Selected publications</h2>
+            <h2>Selected Publications</h2>
             <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
@@ -236,7 +236,7 @@
           <!-- Title -->
           <div class="title">Diagnosing the interference on CPU-GPU Synchronization Caused by CPU Sharing in Multi-Tenant GPU Clouds</div>
           <!-- Author -->
-          <div class="author"><em>Y. Elmougy</em>, W. Jia, X. Ding, J. Shan
+          <div class="author"><em>Youssef Elmougy</em>, Weiwei Jia, Xiaoning Ding, Jianchen Shan
           </div>
 
           <!-- Journal/Book title and date -->
@@ -254,7 +254,7 @@
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
             <p>The GPU-accelerated cloud, enabled by maturing GPU virtualization techniques, has become the most attractive platform for high-performance computing and machine learning workloads. However, it is notoriously challenging to build the multi-tenant GPU cloud where resources, like CPUs and GPUs, can be shared. One well-known and heavily studied reason is that workloads suffer from poor performance isolation and low GPU utilization when GPUs are shared. But little attention has been paid to another fundamental yet under studied problem: how sharing CPUs among GPU instances could affect the workload performance?</p>
-<p>Targeting this problem, the paper conducts experiments to measure the performance slowdown and vGPU utilization de- crease under interference from CPU sharing. The results show that GPU workloads suffer from poor and unpredictable per- formance and heavy vGPU under-utilization because of CPU sharing. We find that such interference is the result of the complex interplay between the characteristics of CPU-GPU interactions and the special behavior of shared vCPUs: vCPU discontinuity. To diagnose how vCPU discontinuity causes the interference, the paper leverages NVIDIA Nsight Systems for fine-grained profiling and has the following findings: 1) vCPU discontinuity causes inefficient CPU-GPU synchronizations; 2) vCPU discontinuity delays task offloading to the vGPU; 3) Polling-based CPU-GPU synchronization suffers from interference more than blocking- based CPU-GPU synchronization; 4) GPU workloads with fre- quent task offloads and synchronizations are more vulnerable. Based on the findings, the paper proposes a novel polling-then- blocking CPU-GPU synchronization primitive. Evaluation shows that it can improve the performance by 4.2x.</p>
+<p>Targeting this problem, the paper conducts experiments to measure the performance slowdown and vGPU utilization decrease under interference from CPU sharing. The results show that GPU workloads suffer from poor and unpredictable performance and heavy vGPU under-utilization because of CPU sharing. We find that such interference is the result of the complex interplay between the characteristics of CPU-GPU interactions and the special behavior of shared vCPUs: vCPU discontinuity. To diagnose how vCPU discontinuity causes the interference, the paper leverages NVIDIA Nsight Systems for fine-grained profiling and has the following findings: 1) vCPU discontinuity causes inefficient CPU-GPU synchronizations; 2) vCPU discontinuity delays task offloading to the vGPU; 3) Polling-based CPU-GPU synchronization suffers from interference more than blocking-based CPU-GPU synchronization; 4) GPU workloads with frequent task offloads and synchronizations are more vulnerable. Based on the findings, the paper proposes a novel polling-then-blocking CPU-GPU synchronization primitive. Evaluation shows that it can improve the performance by 4.2x.</p>
           </div>
         </div>
       </div>
@@ -275,7 +275,7 @@
           <!-- Title -->
           <div class="title">Anomaly Detection on Bitcoin, Ethereum Networks Using GPU-accelerated Machine Learning Methods</div>
           <!-- Author -->
-          <div class="author"><em>Y. Elmougy</em>, O. Manzi 
+          <div class="author"><em>Youssef Elmougy</em>, Oliver Manzi
           </div>
 
           <!-- Journal/Book title and date -->
@@ -292,7 +292,7 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Blockchain technology is continually gaining mo- mentum, with applications expanding in sectors beyond digital assets and financial services. With the existence of a public distributed ledger, the validity of transactions and accounts on the blockchain can be easily reviewed. Nevertheless, there are malicious persons that attempt to fraud cryptocurrency holders, undermining the reliability of the blockchain. This study focuses on identifying fraudulent transactions and accounts by detecting anomalies in the Bitcoin and the Ethereum transaction networks, the two largest cryptocurrencies. By leveraging GPU-accelerated machine learning models, including Support Vector Machines, Random Forest, and Logistic Regression, we draw the metadata of over 30 million transactions on the Bitcoin network and confirmed transactions from over 500 thousand accounts on the Ethereum network. We offer insight into feature importance through sensitivity analysis, as well as train accurate models that allow for method adoption in automated fraud detection systems. The trained models achieve an accuracy and recall of 96.9% and 0.987 on the Bitcoin dataset, and 80.2% and 0.835 on the Ethereum dataset. The study of anomaly detection in the cryptocurrency blockchain done in this paper can be gen- eralized to other blockchain networks, including health service blockchains, public sector blockchains, and financial intelligence blockchains.</p>
+            <p>Blockchain technology is continually gaining momentum, with applications expanding in sectors beyond digital assets and financial services. With the existence of a public distributed ledger, the validity of transactions and accounts on the blockchain can be easily reviewed. Nevertheless, there are malicious persons that attempt to fraud cryptocurrency holders, undermining the reliability of the blockchain. This study focuses on identifying fraudulent transactions and accounts by detecting anomalies in the Bitcoin and the Ethereum transaction networks, the two largest cryptocurrencies. By leveraging GPU-accelerated machine learning models, including Support Vector Machines, Random Forest, and Logistic Regression, we draw the metadata of over 30 million transactions on the Bitcoin network and confirmed transactions from over 500 thousand accounts on the Ethereum network. We offer insight into feature importance through sensitivity analysis, as well as train accurate models that allow for method adoption in automated fraud detection systems. The trained models achieve an accuracy and recall of 96.9% and 0.987 on the Bitcoin dataset, and 80.2% and 0.835 on the Ethereum dataset. The study of anomaly detection in the cryptocurrency blockchain done in this paper can be generalized to other blockchain networks, including health service blockchains, public sector blockchains, and financial intelligence blockchains.</p>
           </div>
         </div>
       </div>
