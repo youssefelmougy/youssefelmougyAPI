@@ -205,11 +205,11 @@
 
       <p>I received both my B.S. in Computer Science (concentration in Artificial Intelligence and Computer Modeling) in 2021 and my M.S. in Computer Science (concentration in High Performance Computing) in 2022 from Georgia Tech.</p>
 
-      <p>Recently, I’ve been working on distributed graph algorithms in the actor-based programming system, enabling resiliency in Asynchronous Many-Task (AMT) programming models, automatic termination graph detection, approximation algorithms, and graph-based blockchain transaction forecasting.</>
+      <p>Recently, I’ve been working on distributed graph algorithms in the actor-based programming system, distributed training for deep learning workflows (DL), hybrid communication strategies for computation intensive applications, enabling resiliency in Asynchronous Many-Task (AMT) programming models, automatic termination graph detection, approximation algorithms, and graph-based blockchain transaction forecasting.</>
       
       <h2>Research Interests</h2>
       
-      <p>Distributed systems, parallel systems, High Performance Computing, GPU programming, cloud computing, machine learning, and performance of cloud applications in heterogeneous computing environments.</p>
+      <p>Distributed systems, deep learning / machine learning, parallel systems, High Performance Computing, GPU programming, communication models, cloud computing, and performance of cloud applications in heterogeneous computing environments.</p>
       
     </div>
 
@@ -222,12 +222,170 @@
           <div class="publications">
             <h2>Selected Publications</h2>
             <ol class="bibliography">
+
 <li>
 <!-- _layouts/bib.html -->
 
       <div class="row">
         <div class="col-sm-2">
-<img style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto" src="/assets/pdf/NAMD1_kernel_receiveNEW.pdf">
+<img style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto" src="/assets/pdf/actorvizaddrtx.jpg">
+			<!--">-->
+</div>
+
+        <!-- Entry bib key -->
+        <div id="Elmougy:2023:ELLIPTIC" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Demystifying Fraudulent Transactions and Illicit Nodes in the Bitcoin Network for Financial Forensics</div>
+          <!-- Author -->
+          <div class="author"><em>Youssef Elmougy</em>, Ling Liu
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical"> 
+            <em>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</em>, 2023
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a href="https://arxiv.org/pdf/2306.06108.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">ArXiv PDF (TO APPEAR IN PROCEEDINGS)</a>
+	    <a href="https://github.com/git-disl/EllipticPlusPlus" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">GiHub Repo</a>
+            <a href="" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Presentation Slides (TO APPEAR)</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Blockchain provides the unique and accountable channel for financial forensics by mining its open and immutable transaction data. A recent surge has been witnessed by training machine learning models with cryptocurrency transaction data for anomaly detection, such as money laundering and other fraudulent activities. This paper presents a holistic applied data science approach to fraud detection in the Bitcoin network with two original contributions.</p>
+            <p>First, we contribute the Elliptic++ dataset, which extends the Elliptic transaction dataset to include over 822k Bitcoin wallet addresses (nodes), each with 56 features, and 1.27M temporal interactions. This enables both the detection of fraudulent transactions and the detection of illicit addresses (actors) in the Bitcoin network by leveraging four types of graph data: (i) the transaction-to-transaction graph, representing the money flow in the Bitcoin network, (ii) the address-to-address interaction graph, capturing the types of transaction flows between Bitcoin addresses, (iii) the address-transaction graph, representing the bi-directional money flow between addresses and transactions (BTC flow from input address to one or more transactions and BTC flow from a transaction to one or more output addresses), and (iv) the user entity graph, capturing clusters of Bitcoin addresses representing unique Bitcoin users. Second, we perform fraud detection tasks on all four graphs by using diverse machine learning algorithms. We show that adding enhanced features from the address-to-address and the address-transaction graphs not only assists in effectively detecting both illicit transactions and illicit addresses, but also assists in gaining in-depth understanding of the root cause of money laundering vulnerabilities in cryptocurrency transactions and the strategies for fraud detection and prevention. The Elliptic++ dataset is released at https://www.github.com/git-disl/EllipticPlusPlus.</p>
+          </div>
+        </div>
+      </div>
+</li>
+		    
+<li>
+<!-- _layouts/bib.html -->
+
+      <div class="row">
+        <div class="col-sm-2">
+<img style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto" src="/assets/pdf/genome_algorithm_5.png">
+			<!--">-->
+</div>
+
+        <!-- Entry bib key -->
+        <div id="Elmougy:2023:JACCARD" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">An Asynchronous Distributed Actor-based Approach to Jaccard Similarity for Genome Comparisons</div>
+          <!-- Author -->
+          <div class="author"><em>Youssef Elmougy</em>, Akihiro Hayashi, Jun Shirako, Vivek Sarkar
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical"> 
+            <em>(under submission)</em>, 2023
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a href="" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF (TO APPEAR)</a>
+	   <a href="https://github.com/youssefelmougy/jaccard-selector" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            <a href="" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Presentation Slides (TO APPEAR)</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The computation of genome similarity is important in computational biology applications, and is assessed by calculating Jaccard similarity of DNA sequencing sets. However, it's challenging to find solutions that can compute Jaccard similarity with the efficiency and scalability needed to fully utilize capabilities of modern HPC hardware. We introduce a novel algorithm for computing Jaccard similarity for genome comparisons, founded on an actor-based programming model. Our algorithm takes advantage of fine-grained asynchronous computations, distributed/shared memory model, and the Fine-grained Asynchronous Bulk-Synchronous Parallelism execution model. Our performance results on the NERSC Perlmutter supercomputer demonstrate that this approach scales to 16,384 cores, showing an average of 3.6x and 5.5x improvement in execution time and hardware counters compared to a state-of-the-art baseline. Moreover, we propose a novel compiler approach enabling programmers to optionally develop distributed code using the familiar BSP-based Partitioned Global Address Space model while automatically generating Actor-based code for improved performance.</p>
+          </div>
+        </div>
+      </div>
+</li>
+
+<li>
+<!-- _layouts/bib.html -->
+
+      <div class="row">
+        <div class="col-sm-2">
+<img style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto" src="/assets/pdf/ActorModel.png">
+			<!--">-->
+</div>
+
+        <!-- Entry bib key -->
+        <div id="Elmougy:2023:SCALE" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Highly Scalable Large-Scale Asynchronous Graph Processing using Actors</div>
+          <!-- Author -->
+          <div class="author"><em>Youssef Elmougy</em>, Akihiro Hayashi, Vivek Sarkar
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical"> 
+            <em>IEEE/ACM International Symposium on Cluster Computing and the Grid (CCGRID)</em>, 2023
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a href="https://ieeexplore.ieee.org/abstract/document/10181177" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">IEEE Explore</a>
+            <a href="/assets/pdf/CCGRID23_presentation.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Presentation Slides</a>
+            <a href="https://youtu.be/fMSbSHhsW0o" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Demo Video</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>With the accelerating growth of Big Data, real-world graph processing applications now need to tackle graphs with billions of vertices and trillions of edges, thereby increasing the demand for effective solutions to application scalability. Unfortunately, current approaches to implementing these applications on modern HPC systems exhibit poor scale-out performance with increasing numbers of nodes. The scalability challenges for these applications are driven by large data sizes, synchronization overheads, and fine-grained communications with irregular data accesses and poor locality. This paper presents the scalability of a novel Actor-based programming system, which provides a lightweight runtime that supports fine-grained asynchronous execution and automatic message aggregation atop a Partitioned Global Address Space (PGAS) communication layer. Evaluations of the Jaccard Index and PageRank applications on the NERSC Perlmutter system demonstrate nearly perfect scaling up to 1,000 nodes and $64$K cores (one-third of the targeted 3000-nodes for Perlmutter). In addition, our Actor-based implementations of Jaccard Index and PageRank executed with parallel efficiencies of 85.7% and 63.4% for the largest run of 64K cores. This performance represents a 29.6x speedup relative to UPC and OpenSHMEM versions of PageRank.  </p>
+          </div>
+        </div>
+      </div>
+</li>
+
+<li>
+<!-- _layouts/bib.html -->
+
+      <div class="row">
+        <div class="col-sm-2">
+<img style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto" src="/assets/pdf/vrbbtdvf.png">
+			<!--">-->
+</div>
+
+        <!-- Entry bib key -->
+        <div id="Paul:2023:PGASJOURNAL" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">A Fine-grained Asynchronous Bulk Synchronous parallelism model for PGAS applications</div>
+          <!-- Author -->
+          <div class="author">Sri Raj Paul, Akihiro Hayashi, Kun Chen, <em>Youssef Elmougy</em>, Vivek Sarkar
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical"> 
+            <em>Journal of Computational Science</em>, 2023
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S1877750323000741" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">ScienceDirect PDF</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The Partitioned Global Address Space (PGAS) model is well suited for executing irregular applications on cluster-based systems, due to its efficient support for short, one-sided messages. Separately, the actor model has been gaining popularity as a productive asynchronous message-passing approach for distributed objects in enterprise and cloud computing platforms, typically implemented in languages such as Erlang, Scala or Rust. To the best of our knowledge, there has been no past work on using the actor model to deliver both productivity and scalability to irregular PGAS applications with large number of small messages.</p>
+		  <p>In this paper, we introduce a new programming system for PGAS applications, in which point-to-point remote operations can be expressed as fine-grained asynchronous actor messages. In our approach, the programmer does not need to worry about programming complexities related to message aggregation and termination detection. Our approach can be viewed as extending the classical Bulk Synchronous Parallelism model with fine-grained asynchronous communications within a phase or superstep. We believe that our approach offers a desirable point in the productivity-performance space for PGAS applications, with more scalable performance and higher productivity relative to past approaches. Specifically, for seven irregular mini-applications from the Bale Kernels and three graph kernels executed using 2048 cores in the NERSC Cori system, our approach shows geometric mean performance improvements of >= 20x relative to standard PGAS versions (UPC and OpenSHMEM) while maintaining comparable productivity to those versions.</p>
+		  <p>This is an extended version of the conference paper “A Productive and Scalable Actor-Based Programming System for PGAS Applications” (Paul et al., 2022)[1] from ICCS 2022.</p>
+		</div>
+        </div>
+      </div>
+</li>
+		    
+<li>
+<!-- _layouts/bib.html -->
+
+      <div class="row">
+        <div class="col-sm-2">
+<img style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto" src="/assets/pdf/NAMD1_kernel_receiveNEW.png">
 			<!--">-->
 </div>
 
@@ -266,7 +424,7 @@
 
       <div class="row">
         <div class="col-sm-2">
-<img style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto" src="/assets/pdf/featureSensitivity.pdf">
+<img style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto" src="/assets/pdf/featureSensitivity.png">
 			<!--">-->
 </div>
 
@@ -287,7 +445,7 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-            <a href="/assets/pdf/ICCTA_final.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF (to appear on IEEE Explore)</a>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9916625" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">IEEE Explore</a>
             <a href="/assets/pdf/ICCTA_Presentation_Slides.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Presentation Slides</a>
           </div>
 
@@ -344,7 +502,7 @@
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    © Copyright 2022 Youssef Elmougy.
+    © Copyright 2023 Youssef Elmougy.
     Please <a href="mailto:yelmougy3@gatech.edu">email me</a> to get in contact! 
 
     
